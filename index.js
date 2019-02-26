@@ -66,7 +66,7 @@ function cool(updateFunction) {
 }
 
 function makeDessert(e) {
-console.log(e.path)
+console.log(e.path.id)
 }
 
 function serve(message, customer) {
