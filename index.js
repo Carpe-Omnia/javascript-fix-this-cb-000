@@ -30,7 +30,7 @@ function makeCake() {
 
 function makePie() {
   var inter = cake.decorate.bind(pie) ;
-  pie.decorate = inter 
+  pie.decorate = inter
   var updatePieStatus;
   mix(updatePieStatus)
 }
