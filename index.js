@@ -43,7 +43,7 @@ function bake(updateFunction) {
   var status = "Baking at " + this.bakeTemp + " for " + this.bakeTime
   console.log(`bake has ${this.name}`)
   var next = cool.bind(this) ;
-  setTimeout(cool(updateFunction), 2000) ;
+  setTimeout(next(updateFunction), 2000) ;
   updateFunction(status)
 }
 
