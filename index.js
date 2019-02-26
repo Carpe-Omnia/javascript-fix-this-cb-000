@@ -56,6 +56,7 @@ function mix(updateFunction) {
 }
 
 function cool(updateFunction) {
+  console.log(`cool has ${this.name}`)
   var status = "It has to cool! Hands off!"
   setTimeout(function() {
     this.decorate(updateFunction)
