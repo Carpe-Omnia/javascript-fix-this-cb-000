@@ -61,9 +61,8 @@ function cool(updateFunction) {
   console.log(`cool has ${this.name}`)
   var status = "It has to cool! Hands off!"
   updateFunction(status)
-  setTimeout(function() {
-    this.decorate(updateFunction)
-  }, 2000)
+  var next = cake.decorate.bind(this) ;
+  setTimeout(next(updateFunction), 2000)
 }
 
 function makeDessert() {
