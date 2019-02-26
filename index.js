@@ -66,7 +66,7 @@ function cool(updateFunction) {
 }
 
 function makeDessert(e) {
-console.log(e.path[0].id)
+e.path[0].id == "make-cake" ? makeCake() : makePie() ;
 }
 
 function serve(message, customer) {
