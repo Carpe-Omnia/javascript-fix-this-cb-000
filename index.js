@@ -45,7 +45,7 @@ function bake(updateFunction) {
   console.log(`bake has ${this.name}`)
   var next = cool.bind(this) ;
   setTimeout(next(updateFunction), 2000) ;
-  
+
 }
 
 function mix(updateFunction) {
@@ -54,7 +54,7 @@ function mix(updateFunction) {
   console.log(`mix has ${this.name}`)
   var next = bake.bind(this) ;
   setTimeout(next(updateFunction), 2000)
-  
+
 }
 
 function cool(updateFunction) {
