@@ -29,7 +29,7 @@ function makeCake() {
 }
 
 function makePie() {
-  var inter = cake.decorate.bind(pie) ; 
+  var inter = cake.decorate.bind(pie) ;
   var updatePieStatus;
   mix(updatePieStatus)
 }
