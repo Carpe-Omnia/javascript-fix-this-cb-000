@@ -65,9 +65,8 @@ function cool(updateFunction) {
   setTimeout(next(updateFunction), 2000)
 }
 
-function makeDessert() {
-  //add code here to decide which make... function to call
-  //based on which link was clicked
+function makeDessert(e) {
+console.log(e)
 }
 
 function serve(message, customer) {
