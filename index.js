@@ -27,13 +27,13 @@ function makeCake() {
   var updateCakeStatus;
   mix(updateCakeStatus)
 }
-
+/*
 function makePie() {
   var pie.decorate() = cake.decorate.bind(pie) ;
   var updatePieStatus;
   mix(updatePieStatus)
 }
-
+*/
 function updateStatus(statusText) {
   document.getElementsByClassName("status")[0].innerText = statusText
 }
