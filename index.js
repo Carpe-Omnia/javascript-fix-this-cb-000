@@ -31,7 +31,7 @@ function makeCake() {
 pie.decorate = cake.decorate.bind(pie) ;
 
 function makePie() {
-  var updatePieStatus;
+  var updatePieStatus = (statusText) => {document.getElementsByClassName("status")[1].innerText = statusText};
   mix(updatePieStatus)
 }
 
