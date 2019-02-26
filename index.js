@@ -41,18 +41,20 @@ function updateStatus(statusText) {
 
 function bake(updateFunction) {
   var status = "Baking at " + this.bakeTemp + " for " + this.bakeTime
+  updateFunction(status)
   console.log(`bake has ${this.name}`)
   var next = cool.bind(this) ;
   setTimeout(next(updateFunction), 2000) ;
-  updateFunction(status)
+  
 }
 
 function mix(updateFunction) {
   var status = "Mixing " + this.ingredients.join(", ")
+  updateFunction(status)
   console.log(`mix has ${this.name}`)
   var next = bake.bind(this) ;
   setTimeout(next(updateFunction), 2000)
-  updateFunction(status)
+  
 }
 
 function cool(updateFunction) {
